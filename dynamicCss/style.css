@@ -1,0 +1,19 @@
+span {
+    color: #fff;
+    background: rgba(255, 34, 34, 0.959);
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+.available span{
+    background: #5ce749;
+
+}
+.nearby span{
+    background: #8049e7;
+}
+.nearby span::after{
+    content: " nearby";
+}
+

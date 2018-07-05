@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS Basics</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>{{event}}</h1>
+        <h3>My age is {{age}}</h3>
+        <button @click.once="add(1)">Increase 1 Yr</button>
+        <button v-on:click="subtract(1)">Decrease 1 Yr</button>
+        <button v-on:dblclick="add(10)">Increase 10 Yr</button>
+        <button @dblclick="subtract(10)">Decrease 10 Yr</button>
+        <div v-on:mousemove="move" id="canvas">{{x}}, {{y}}</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

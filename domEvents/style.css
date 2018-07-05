@@ -1,0 +1,8 @@
+#canvas{
+    width: 80vw;
+    border: 5px solid black;
+    height: 70vh;
+    margin: 15px;
+    padding: 20px;
+    font-size: 40px;
+}

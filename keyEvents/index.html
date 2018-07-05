@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS Basics</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{event}}</h1>
+        <label>Name:</label>
+        <input v-model="name" type="text">
+        <!-- <input @keyup.alt.67="logName" type="text"> -->
+        <span>{{name}}</span>
+        <br>
+        <br>
+        <label>Age:</label>
+        <input v-model="age" type="number">
+        <!-- <input @keyup.alt.enter="logAge" type="text"> -->
+        <span>{{age}}</span>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
