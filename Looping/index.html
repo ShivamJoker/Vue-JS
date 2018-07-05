@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue JS Basics</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Looping through lists</h1>
+        <ul>
+            <li v-for="character in characters">{{character}}</li>
+        </ul>
+        <ul>
+            <li v-for="(size, i) in sizes"> {{i}} {{size.name}} - {{size.inch}}</li>
+        </ul>
+        <template v-for="(size, i) in sizes">
+            <h3>{{i}} . {{size.inch}}</h3>
+            <p>{{size.name}}</p>
+        </template>
+
+
+        <template v-for="size in sizes">
+            <div v-for="(val, key) in size">
+                    <p>{{key}} - {{val}}</p>
+            </div>
+            
+        </template>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
